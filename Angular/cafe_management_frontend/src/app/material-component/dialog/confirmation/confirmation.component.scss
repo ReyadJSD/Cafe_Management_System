@@ -1,0 +1,15 @@
+.mat-h6, .mat-headline, .mat-typography h6{
+    font-size: 18px;
+    font-weight: 400;
+}
+
+.custom-toolbar {
+    overflow: hidden;
+    background-color: #7b1fa2;
+
+    .mat-toolbar-row {
+        white-space: nowrap; 
+        overflow-x: auto; 
+        overflow-y: hidden; 
+    }
+}

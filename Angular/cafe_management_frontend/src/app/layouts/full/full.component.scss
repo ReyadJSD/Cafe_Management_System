@@ -1,0 +1,74 @@
+.main-container {
+    display: flex;
+    flex-direction: column;
+    height: 100vh; // Make main-container fill the full viewport height
+
+    .topbar {
+        background-color: #7b1fa2;
+        padding: 10px;
+        display: flex;
+        align-items: center; // Align items vertically in the center
+
+        .navbar-header {
+            display: flex;
+            align-items: center;
+
+            button {
+                margin-right: 10px; // Add margin for spacing
+            }
+
+            b {
+                display: flex;
+                margin-right: 10px; // Add margin for spacing
+            }
+
+            span {
+                display: flex;
+                margin-right: 10px; // Add margin for spacing
+            }
+        }
+    }
+
+    .example-sidenav-container {
+        flex: 1; 
+        display: flex;
+
+        .dark-sidebar {
+            padding: 10px;
+            width: 280px;
+            background-color: #f3f3f3;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.2); // Add shadow to the sidebar
+        }
+
+        .mat-sidenav-content {
+            flex: 1; // Make it expand to fill remaining vertical space
+            box-shadow: -3px 0 10px rgba(0, 0, 0, 0.2); // Add shadow to the right of the content
+        }
+    }
+}
+
+.mat-list-item {
+    background-color: #7b1fa2;
+
+    .a {
+        display: flex;
+        align-items: center;
+        text-align: center;
+        color: #faf9f9;
+        text-decoration: none; /* Remove underline */
+    }
+
+    .a mat-icon {
+        margin-right: 5px; /* Adjust margin between icon and text */
+    }
+}
+
+.page-content {
+    background-color: white;
+    margin-left: 20px; 
+    margin-right: 10px;
+}
+.page-wrapper{
+    background-color: rgb(224, 238, 238);
+}
+

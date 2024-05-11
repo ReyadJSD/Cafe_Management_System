@@ -142,8 +142,9 @@ public class UserServiceImpl implements UserService {
                     userObj.setPassword(requestMap.get("newPassword"));
                     userDao.save(userObj);
                     return CafeUtils.getResponseEntity("Password Updated Successfully", HttpStatus.OK);
+                }else{
+                    return CafeUtils.getResponseEntity("Incorrect old Password", HttpStatus.BAD_REQUEST);
                 }
-                return CafeUtils.getResponseEntity("Incorrect old Password", HttpStatus.BAD_REQUEST);
             }
             return CafeUtils.getResponseEntity(CafeConstants.SOMETHING_WENT_WRONG, HttpStatus.INTERNAL_SERVER_ERROR);
         }catch (Exception ex){

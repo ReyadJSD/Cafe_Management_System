@@ -1,0 +1,96 @@
+.position-relative {
+	position: relative;
+}
+
+.add-contact {
+	position: absolute;
+    right: 17px;
+    top: 57px;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    margin-top: 10px;
+  }
+  
+  html {
+    box-sizing: border-box;
+  }
+  
+  *, *:before, *:after {
+    box-sizing: inherit;
+  }
+
+  .row {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+  .column {
+    flex: 1 1 30%;
+    margin: 0 10px;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .card {
+    width: 100%;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    margin: 8px;
+  }
+  
+  .about-section {
+    padding: 50px;
+    text-align: center;
+    background-color: #474e5d;
+    color: white;
+  }
+  
+  .container {
+    text-align: center;
+  }
+  
+  .container::after, .row::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+  
+  .title {
+    color: black;
+    text-align: center !important;
+  }
+  
+  .button {
+    border: none;
+    outline: 0;
+    display: inline-block;
+    padding: 8px;
+    color: white;
+    background-color: #7b1fa2;
+    text-align: center;
+    cursor: pointer;
+    width: 80%; /* Adjust button width as needed */
+    font-weight: bold;
+    border-radius: 3px;
+  }
+  
+  .button:hover {
+    background-color: #555;
+  }
+  
+  @media screen and (max-width: 650px) {
+    .column {
+      width: 100%;
+      display: block;
+    }
+  }
+
+  .mat-card {
+    font-size: 24px;
+    text-align: center !important;
+    color: #070707;
+    padding: 8px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+  }

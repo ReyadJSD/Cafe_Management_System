@@ -1,0 +1,14 @@
+.mat-list-item {
+    background-color: #7b1fa2;
+    .a {
+        display: flex;
+        align-items: center;
+        text-align: center;
+        color: #fffcfc;
+        text-decoration: none; /* Remove underline */
+    }
+
+    .a mat-icon {
+        margin-right: 5px; /* Adjust margin between icon and text */
+    }
+}

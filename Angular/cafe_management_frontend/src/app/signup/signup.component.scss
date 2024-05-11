@@ -1,0 +1,22 @@
+
+
+.mat-form-field{
+    padding: 5px;
+}
+
+.mat-hint{
+    color: red;
+}
+
+
+// Add padding to the Signup text and the close icon button
+.custom-toolbar {
+    overflow: hidden;
+    background-color: #7b1fa2;
+
+    .mat-toolbar-row {
+        white-space: nowrap; 
+        overflow-x: auto; 
+        overflow-y: hidden; 
+    }
+}
