@@ -1,5 +1,6 @@
 .mat-list-item {
-    background-color: #7b1fa2;
+    background-color: #59565a;
+
     .a {
         display: flex;
         align-items: center;
@@ -11,4 +12,12 @@
     .a mat-icon {
         margin-right: 5px; /* Adjust margin between icon and text */
     }
+
+    &.selected {
+        background-color: #5a187d; /* Change background color for selected menu item */
+    }
+}
+
+.spacer {
+    height: 10px; /* Adjust the height of the spacer */
 }

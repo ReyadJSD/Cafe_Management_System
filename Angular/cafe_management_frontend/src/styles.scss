@@ -1,5 +1,4 @@
 /* You can add global styles to this file, and also import other style files */
-
 html, body { height: 100%; }
 body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
 
@@ -23,14 +22,14 @@ body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
     padding: 0px 8px 0px 15px !important;
   }
 
-  .black-snackbar {
-    background: black !important;
-    color: white !important;
+  ::ng-deep.error-snackbar {
+    background-color: red;
+    color: white;
   }
-
-  .green-snackbar {
-    background: #00ff7f;
-    color: #080908;
+  
+  .success-snackbar {
+    background-color: green;
+    color: white;
   }
 
   .mat-snack-bar-container {
@@ -45,4 +44,8 @@ body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
 
 .spacer {
   flex: 1 auto;
+}
+
+.primary{
+  color: #673AB7;
 }

@@ -13,14 +13,15 @@ export class SnackbarService {
       this.snackBar.open(message,'',{
         horizontalPosition:'center',
         verticalPosition:'top',
-        duration:3000,
+        duration:4000,
+        panelClass: ['error-snackbar']
       })
     }else{
       this.snackBar.open(message,'',{
         horizontalPosition:'center',
         verticalPosition:'top',
-        duration:3000,
-        panelClass:'green-snackbar'
+        duration:4000,
+        panelClass: ['success-snackbar']
       })
     }
   }

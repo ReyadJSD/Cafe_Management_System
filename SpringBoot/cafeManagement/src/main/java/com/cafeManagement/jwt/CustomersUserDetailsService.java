@@ -30,6 +30,7 @@ public class CustomersUserDetailsService implements UserDetailsService {
         }
     }
 
+
     public com.cafeManagement.POJO.User getUserDetails(){
         return userDetail;
     }

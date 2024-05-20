@@ -1,42 +1,39 @@
-.mat-toolbar {
-    margin: -24px;
-    margin-bottom: 0;
-    width: auto;
-    margin-bottom: 10PX;
+
+#customers {
+  font-family: Arial, Helvetica, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+#customers td,
+#customers th {
+  border: 1px solid #ddd;
+  padding: 8px;
+}
+
+#customers th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: left;
+  background-color: #04AA6D;
+  color: white;
+}
+
+.custom-toolbar {
+  overflow: hidden;
+  background-color: #7b1fa2;
+
+  .mat-toolbar-row {
+      white-space: nowrap; 
+      overflow-x: auto; 
+      overflow-y: hidden; 
+      color: white;
   }
-  
-    mat-form-field{
-        padding: 5px;
-    }
-
-    .float-right{
-        float: right;
-    }
-    
-    mat-card{
-        padding: 20px;
-    }
-    
-    table {
-        width: 100%;
-      }
-
-
-      #customers {
-        font-family: Arial, Helvetica, sans-serif;
-        border-collapse: collapse;
-        width: 100%;
-      }
-      
-      #customers td, #customers th {
-        border: 1px solid #ddd;
-        padding: 8px;
-      }
-      
-      #customers th {
-        padding-top: 12px;
-        padding-bottom: 12px;
-        text-align: left;
-        background-color: #04AA6D;
-        color: white;
-      }
+  .mat-icon{
+      background-color: #7b1fa2;
+      color: white;
+  }
+}
+.mat-card-header {
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+}

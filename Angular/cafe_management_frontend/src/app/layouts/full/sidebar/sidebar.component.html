@@ -1,9 +1,21 @@
-<mat-nav-list appAccordion>
-    <mat-list-item class="mat-list-item" appAccordionLink *ngFor="let menuitem of menuItems.getMenuItems()" routerLinkActive="selected" group="{{menuitem.state}}">
+<!-- <mat-nav-list appAccordion>
+    <mat-list-item class="mat-list-item" appAccordionLink *ngFor="let menuitem of menuItems.getMenuItems()" routerLinkActive="selected" group="{{menuitem.state}}" [class.selected]="isActive(menuitem.state.toString())">
         <a class="a" appAccordionToggle [routerLink]="['/cafe/', menuitem.state]"
         *ngIf="menuitem.type === 'link' && (menuitem.role === '' || menuitem.role === userRole)">
     <mat-icon>{{menuitem.icon}}</mat-icon>
     <span>{{menuitem.name}}</span>
     </a>
     </mat-list-item>
-</mat-nav-list>
+</mat-nav-list> -->
+
+<mat-nav-list appAccordion>
+    <ng-container *ngFor="let menuitem of filteredMenuItems">
+      <mat-list-item class="mat-list-item" appAccordionLink [class.selected]="isActive(menuitem.state.toString())">
+        <a class="a" appAccordionToggle [routerLink]="['/cafe/', menuitem.state]" *ngIf="menuitem.type === 'link'">
+          <mat-icon>{{menuitem.icon}}</mat-icon>
+          <span>{{menuitem.name}}</span>
+        </a>
+      </mat-list-item>
+      <div class="spacer"></div> <!-- Add a spacer after each menu item -->
+    </ng-container>
+  </mat-nav-list>

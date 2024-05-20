@@ -1,0 +1,15 @@
+.custom-toolbar {
+    overflow: hidden;
+    background-color: #7b1fa2;
+
+    .mat-toolbar-row {
+        white-space: nowrap; 
+        overflow-x: auto; 
+        overflow-y: hidden; 
+        color: white;
+    }
+    .mat-icon{
+        background-color: #7b1fa2;
+        color: white;
+    }
+}

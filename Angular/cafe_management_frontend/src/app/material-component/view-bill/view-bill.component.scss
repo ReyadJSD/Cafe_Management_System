@@ -1,0 +1,66 @@
+.card-header {
+    display: flex; 
+    justify-content: space-between; 
+    align-items: center; 
+  }
+  
+  .mat-card-header {
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+  }
+  
+  .mat-card-content {
+    margin-top: 10px;
+  }
+  
+  .product-title {
+    font-size: 14pt;
+    font-weight: bold;
+  }
+  
+  .button {
+    border: none;
+    outline: 0;
+    display: flex;
+    justify-content: center; /* Center items horizontally */
+    align-items: center; /* Center items vertically */
+    padding: 4px;
+    color: white;
+    background-color: #7b1fa2;
+    text-align: center;
+    cursor: pointer;
+    width: 20%; /* Adjust button width as needed */
+    font-weight: bold;
+    border-radius: 3px;
+  }
+  .mat-slide-toggle{
+    display: inline-flex;
+  }
+  
+  .button .mat-icon {
+    margin-right: 5px;
+  }
+  .custom-mat-icon{
+    color: #7b1fa2;
+  }
+  .mat-icon-background{
+    background-color: #7b1fa2;
+  }
+  
+  .float-right { 
+    float: right;
+  }
+  
+  mat-card {
+    margin-top: 10px;
+    padding: 15px;
+  }
+  
+  table {
+    width: 100%;
+  }
+  
+  ::ng-deep .highlight {
+    color: white;
+    background-color: #673AB7;
+  }
+  

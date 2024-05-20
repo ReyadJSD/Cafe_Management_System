@@ -1,0 +1,42 @@
+<mat-card class="mat-card-header">
+    <div class="card-header">
+        <span class="user-title">Manage User</span>
+    </div>
+</mat-card>
+<mat-card class="mat-card-header mat-card-full-width">
+    <mat-form-field appearance="fill" class="mat-card-content">
+        <mat-label>Filter</mat-label>
+        <input matInput (keyup)="applyFilter($event)" #input>
+    </mat-form-field>
+</mat-card>
+<br>
+
+<div class="responsive_table">
+    <table mat-table [dataSource]="dataSource" class="mat-elevation-z8">
+        <ng-container matColumnDef="name">
+            <th mat-header-cell *matHeaderCellDef style="text-align: center;">Name</th>
+            <td mat-cell *matCellDef="let element" style="text-align: center;">{{element.name}}</td>
+        </ng-container>
+
+        <ng-container matColumnDef="email">
+            <th mat-header-cell *matHeaderCellDef style="text-align: center;">Email</th>
+            <td mat-cell *matCellDef="let element" style="text-align: center;">{{element.email}}</td>
+        </ng-container>
+
+        <ng-container matColumnDef="contactNumber">
+            <th mat-header-cell *matHeaderCellDef style="text-align: center;">Contact Number</th>
+            <td mat-cell *matCellDef="let element" style="text-align: center;">{{element.contactNumber}}</td>
+        </ng-container>
+
+        <ng-container matColumnDef="status">
+            <th mat-header-cell *matHeaderCellDef style="text-align: center;">Action</th>
+            <td mat-cell *matCellDef="let element" class="action-link" style="text-align: center;">
+                <mat-slide-toggle class="mat-slide-toggle" (change)="onChange($event.checked,element.id)"
+                    matTooltip="Activate or Deactivate User" [checked]="element.status"></mat-slide-toggle>
+            </td>
+        </ng-container>
+
+        <tr mat-header-row *matHeaderRowDef="displayedColumns;sticky:true"></tr>
+        <tr mat-row *matRowDef="let row;columns:displayedColumns"></tr>
+    </table>
+</div>

@@ -17,7 +17,7 @@ export class AppHeaderComponent {
   logout(){
     const dialogConfig = new MatDialogConfig();
     dialogConfig.data = {
-      message:"Logout",
+      message:" Logout",
       confirmation:true
     }
     const dialogRef = this.dialog.open(ConfirmationComponent,dialogConfig);
